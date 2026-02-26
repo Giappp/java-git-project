@@ -22,11 +22,4 @@ public class Ex1 {
         System.out.println("Multiply: " + (i1 * i2));
         System.out.println("Division: " + ((float) i1 / i2));
     }
-    public void pullRequestFunc(){
-        System.out.println("This function is waiting for PR");
-    }
-
-    public void display(String message){
-        System.out.println(message);
-    }
 }
