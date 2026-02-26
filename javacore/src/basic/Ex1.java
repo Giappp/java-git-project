@@ -25,4 +25,8 @@ public class Ex1 {
     public void pullRequestFunc(){
         System.out.println("This function is waiting for PR");
     }
+
+    public void display(String message){
+        System.out.println(message);
+    }
 }
