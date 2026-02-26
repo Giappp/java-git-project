@@ -1,0 +1,13 @@
+# Compiled class files
+*.class
+
+# IntelliJ
+.idea
+out/
+target/
+
+# Spring Boot
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target
+!**/src/test/**/target
