@@ -7,6 +7,7 @@ package oop;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Create some Conflict");
         StudentRepo studentRepo = new StudentRepo();
         studentRepo.seedStudent();
         studentRepo.display();

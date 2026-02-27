@@ -3,6 +3,11 @@ package genericslambda;
 import java.util.Arrays;
 import java.util.List;
 
+/*
+    Viết generic method in ra tất cả phần tử của 1 mảng.
+    Dùng lambda để lọc ra các số chẵn trong List<Integer>.
+ */
+
 public class Ex1 {
     public static void main(String[] args) {
         Integer[] intArr = new Integer[]{1, 2, 3, 4, 5};
@@ -22,12 +27,14 @@ public class Ex1 {
         }
     }
 
+    /*
+     Generic method
+     Ở đây phải sử dụng Wrapper types do Generics trong Java chỉ hỗ trợ với kiểu object
+    */
     public static <T> void display(T[] items) {
         for (T item : items) {
             System.out.print(" " + item);
         }
-        // some conflict happens here
-        System.out.println("abcxyz");
-        System.out.println("conflict!");
+        System.out.println();
     }
 }
