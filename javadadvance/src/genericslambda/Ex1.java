@@ -28,6 +28,6 @@ public class Ex1 {
         }
         // some conflict happens here
         System.out.println("abcxyz");
-        System.out.println();
+        System.out.println("conflict!");
     }
 }
