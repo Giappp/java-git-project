@@ -36,7 +36,7 @@ public class StudentRepo {
     }
 
     public void sortStudentByScore(double scoreThreshold) {
-        List<Student> sortedStudent = getStudents()
+        List<Student> sortedStudent = students
                 .stream()
                 .filter(student -> student.getScore() >= scoreThreshold)
                 .sorted(Comparator.comparingDouble(Student::getScore).reversed())
