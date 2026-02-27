@@ -17,24 +17,6 @@ public class StudentRepo {
         students.addAll(StudentUtility.demoStudent());
     }
 
-    public void display() {
-        for (Student s : students) {
-            System.out.printf("Name %s, Age %d, Score %f\n", s.getName(), s.getAge(), s.getScore());
-        }
-    }
-
-    public void average() {
-        double sum = students.stream()
-                .mapToDouble(Student::getScore)
-                .sum();
-
-        System.out.println("Average Point: " + sum / students.size());
-    }
-
-    public List<Student> getStudents() {
-        return new ArrayList<>(students);
-    }
-
     public void sortStudentByScore(double scoreThreshold) {
         List<Student> sortedStudent = students
                 .stream()
