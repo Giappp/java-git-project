@@ -2,6 +2,9 @@ package collectionwork;
 
 import java.util.HashMap;
 import java.util.Map;
+/*
+    Dùng Map<String, Integer> đếm số lần xuất hiện của từ trong 1 đoạn văn bản.
+ */
 
 public class Ex2 {
     public static void main(String[] args) {
