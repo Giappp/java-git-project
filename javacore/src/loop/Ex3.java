@@ -1,21 +1,14 @@
 package loop;
 
-import java.util.Scanner;
+import utils.InputUtility;
 
 /*
     Viết chương trình kiểm tra số chẵn/lẻ, chia hết cho 3 hay không.
 */
 public class Ex3 {
 
-    public static final Scanner sc = new Scanner(System.in);
-
-    public static int getInteger(String message){
-        System.out.printf("%s",message);
-        return sc.nextInt();
-    }
-
     public static void main(String[] args) {
-        int number = getInteger("Input number: ");
+        int number = InputUtility.getInteger("Input number: ");
         switch (number % 2) {
             case 1: {
                 System.out.println("Số lẻ");
