@@ -1,11 +1,8 @@
 package oop3;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class FileHandler {
@@ -16,7 +13,7 @@ public class FileHandler {
                 System.out.println(line);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Xảy ra lỗi IO khi đọc file");
         }
     }
 }
